@@ -3,6 +3,13 @@ import plotly.express as px
 from sklearn import datasets
 import pandas as pd
 import dash_bootstrap_components as dbc
+import dash_auth
+
+
+USER_PASS_MAPPING = {
+    "admin": "admin1234",
+    "user": "user1234"
+}
 
 ############################ DATASET ###############################
 def load_dataset():
@@ -53,6 +60,8 @@ avg_drop = dcc.Dropdown(id="avg_drop", options=wine.feature_names, value="malic_
 ####################### LAYOUT #############################
 external_css = ["https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css", ]
 app = Dash(__name__, external_stylesheets=external_css)
+
+auth = dash_auth.BasicAuth(app, USER_PASS_MAPPING)
 
 sidebar = html.Div([
     html.Br(),

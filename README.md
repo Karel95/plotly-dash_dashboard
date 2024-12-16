@@ -44,5 +44,8 @@ pip install scikit-learn
 
 pip install dash-bootstrap-components
 
+pip install dash-auth
+
 
 python dashboard.py
+

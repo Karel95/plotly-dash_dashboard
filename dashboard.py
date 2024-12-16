@@ -70,20 +70,20 @@ sidebar = html.Div([
 )
 
 modal_body = html.Div([
-    html.Div([html.Img(src="assets/sunny solanki.jpg", width=250, className="rounded-circle mx-auto d-flex img-thumbnail")]),
+    html.Div([html.Img(src="assets/dev.jpg", width=250, className="rounded-circle mx-auto d-flex img-thumbnail")]),
     html.Br(),
-    html.B("Intro: "), "Software Developer | Youtuber | Bonsai Enthusiast",
+    html.B("Intro: "), "Software Developer",
     html.Br(),html.Br(),
-    html.B("About: "), "Sunny Solanki holds a bachelor's degree in Information Technology (2006-2010) from L.D. College of Engineering. Post completion of his graduation, he has 8.5+ years of experience (2011-2019) in the IT Industry (TCS). His IT experience involves working on Python & Java Projects with US/Canada banking clients. Since 2020, he’s primarily concentrating on growing CoderzColumn.",
+    html.B("About: "), "I am a passionate developer with a strong foundation in web, app and game development, backend systems, and blockchain technology. I specialize in creating efficient, scalable, and visually appealing applications using a wide range of tools and technologies.",
     html.Br(), html.Br(),
-    "His main areas of interest are AI, Machine Learning, Data Visualization, and Concurrent Programming. He has good hands-on with Python and its ecosystem libraries.",
+    "Proficient in modern JavaScript frameworks and libraries, including Bootstrap and Tailwind CSS for responsive design. TypeScript: Skilled in building scalable and maintainable codebases with TypeScript. MERN Stack: Comprehensive understanding of MongoDB, Express.js, React.js, and Node.js for full-stack application development. Experienced in building robust backend systems, REST APIs, and server-side applications. SQL Databases: Proficient in designing and managing relational databases such as PostgreSQL and MySQL, including query optimization and schema design.",
     html.Br(),html.Br(),
-    html.B("Email: "), "sunny.2309@yahoo.in",
+    html.B("Email: "), "karelh2207@gmail.com",
     html.Br(),html.Br(),
     html.Div([
-        html.A([html.Img(src="assets/linkedin.png", className="rounded m-1")], href="https://www.linkedin.com/in/sunnythesoftwareengineer/", target="_blank"),
-        html.A([html.Img(src="assets/twitter.png", className="rounded m-1")], href="https://twitter.com/sunny_2309", target="_blank"),
-        html.A([html.Img(src="assets/github.png", className="rounded m-1")], href="https://github.com/sunny2309", target="_blank"),
+        html.A([html.Img(src="assets/linkedin.png", className="rounded m-1")], href="https://www.linkedin.com/in/karel95/", target="_blank"),
+        html.A([html.Img(src="assets/twitter.png", className="rounded m-1")], href="https://twitter.com/", target="_blank"),
+        html.A([html.Img(src="assets/github.png", className="rounded m-1")], href="https://github.com/Karel95", target="_blank"),
     ])
 ])
 
@@ -98,9 +98,9 @@ main_content = html.Div([
         dcc.Graph(id="bar_chart", className="col-5"),
         dcc.Graph(id="heatmap", figure=create_pie_chart(), className="col-5"),
         ],className="row"),
-    "Dashboard Designed By :  ", dbc.Button("Sunny Solanki", id="open", n_clicks=0),
+    "Dashboard Designed By :  ", dbc.Button("Karel Hernandez", id="open", n_clicks=0),
     dbc.Modal([
-                dbc.ModalHeader(dbc.ModalTitle("Sunny Solanki")),
+                dbc.ModalHeader(dbc.ModalTitle("Karel Hernandez")),
                 dbc.ModalBody([modal_body]),
                 dbc.ModalFooter(dbc.Button("Close", id="close", className="ms-auto", n_clicks=0)),
             ],
